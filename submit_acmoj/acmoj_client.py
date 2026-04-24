@@ -34,6 +34,7 @@ from datetime import datetime
 
 class ACMOJClient:
     def __init__(self, access_token: str):
+        # Prefer OnlineJudge3 API base for Git submissions
         self.api_base = "https://acm.sjtu.edu.cn/OnlineJudge/api/v1"
         self.headers = {
             "Authorization": f"Bearer {access_token}",
